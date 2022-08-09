@@ -19,6 +19,7 @@
 		88F38C9728A20BFF005BCBFA /* HashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F38C9628A20BFF005BCBFA /* HashViewController.swift */; };
 		88F38C9B28A2375E005BCBFA /* HashOCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88F38C9A28A2375E005BCBFA /* HashOCViewController.m */; };
 		88F38C9E28A2496B005BCBFA /* CopyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88F38C9D28A2496B005BCBFA /* CopyViewController.m */; };
+		88F38CB028A266FA005BCBFA /* IndexCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88F38CAF28A266FA005BCBFA /* IndexCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 		88F38C9A28A2375E005BCBFA /* HashOCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HashOCViewController.m; sourceTree = "<group>"; };
 		88F38C9C28A2496B005BCBFA /* CopyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CopyViewController.h; sourceTree = "<group>"; };
 		88F38C9D28A2496B005BCBFA /* CopyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CopyViewController.m; sourceTree = "<group>"; };
+		88F38CAF28A266FA005BCBFA /* IndexCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IndexCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,7 +112,7 @@
 		88F1A95826E1B52C00E4B64E /* iOS Demo */ = {
 			isa = PBXGroup;
 			children = (
-				88F38C9528A20BE4005BCBFA /* Hash */,
+				88F38CA028A24D76005BCBFA /* Foundation */,
 				88F1A99126E1FE7200E4B64E /* Index */,
 				88F1A95926E1B52C00E4B64E /* AppDelegate.swift */,
 				88F1A95B26E1B52C00E4B64E /* SceneDelegate.swift */,
@@ -146,6 +148,7 @@
 			children = (
 				88F1A98C26E1D08F00E4B64E /* IndexCell.swift */,
 				88F1A95D26E1B52C00E4B64E /* ViewController.swift */,
+				88F38CAF28A266FA005BCBFA /* IndexCell.xib */,
 			);
 			path = Index;
 			sourceTree = "<group>";
@@ -160,6 +163,14 @@
 				88F38C9D28A2496B005BCBFA /* CopyViewController.m */,
 			);
 			path = Hash;
+			sourceTree = "<group>";
+		};
+		88F38CA028A24D76005BCBFA /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				88F38C9528A20BE4005BCBFA /* Hash */,
+			);
+			path = Foundation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,6 +279,7 @@
 			files = (
 				88F1A96626E1B53300E4B64E /* LaunchScreen.storyboard in Resources */,
 				88F1A96326E1B53300E4B64E /* Assets.xcassets in Resources */,
+				88F38CB028A266FA005BCBFA /* IndexCell.xib in Resources */,
 				88F1A96126E1B52C00E4B64E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

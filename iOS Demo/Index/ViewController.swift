@@ -8,8 +8,8 @@
 import UIKit
 
 fileprivate let dataArray : [IndexItemCellData] = [
-    IndexItemCellData(name: "Test", viewController: UIViewController.init()),
-    IndexItemCellData(name: "Hash OC", viewController: HashOCViewController.init()),
+    IndexItemCellData(name: "hash方法的使用场景及重写意义", viewController: HashOCViewController.init()),
+    
 ]
 
 class ViewController: UIViewController {
@@ -28,7 +28,7 @@ class ViewController: UIViewController {
         tableView.dataSource = self
         tableView.delegate = self
         tableView.frame = self.view.bounds
-        tableView.register(IndexCell.self, forCellReuseIdentifier: cellReuseIdentifier)
+        tableView.register(IndexCell.fromNib(), forCellReuseIdentifier: cellReuseIdentifier)
         return tableView
     }
 }
@@ -44,11 +44,6 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate{
         let cell:IndexCell = tableView.dequeueReusableCell(withIdentifier: cellReuseIdentifier) as! IndexCell
         cell.configure(cellData: cellData)
         return cell
-    }
-    
-    // MARK: UITableViewDelegate
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 80;
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

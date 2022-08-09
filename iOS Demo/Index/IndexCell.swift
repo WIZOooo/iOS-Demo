@@ -15,25 +15,22 @@ struct IndexItemCellData {
 
 class IndexCell : UITableViewCell {
     private var cellData : IndexItemCellData?
-    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
-        super.init(style: style, reuseIdentifier: reuseIdentifier)
-    }
+    @IBOutlet weak var titleLabel: UILabel!
     
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+    override class func awakeFromNib() {
+        super.awakeFromNib()
     }
     
     public func configure(cellData:IndexItemCellData) {
-        self.cellData = cellData;
-        let label = UILabel.init()
-        label.text = cellData.name
-        label.textColor = UIColor.darkGray
-        label.font = UIFont.systemFont(ofSize: 15)
-        label.frame = CGRect.init(x: 20, y: 20, width: 100, height: 30)
-        self.contentView.addSubview(label)
+        self.cellData = cellData
+        titleLabel.text = cellData.name
     }
     
-    func targetVC() -> UIViewController {
-        self.cellData?.viewController ?? UIViewController.init()
+    static func customClassName() -> String {
+        return String(describing: self)
+    }
+    static func fromNib() -> UINib {
+        NSLog(self.customClassName())
+        return UINib.init(nibName: self.customClassName(), bundle: nil)
     }
 }
