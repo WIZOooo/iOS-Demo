@@ -32,4 +32,8 @@ class IndexCell : UITableViewCell {
         label.frame = CGRect.init(x: 20, y: 20, width: 100, height: 30)
         self.contentView.addSubview(label)
     }
+    
+    func targetVC() -> UIViewController {
+        self.cellData?.viewController ?? UIViewController.init()
+    }
 }

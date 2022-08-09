@@ -16,6 +16,9 @@
 		88F1A97126E1B53300E4B64E /* iOS_DemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F1A97026E1B53300E4B64E /* iOS_DemoTests.swift */; };
 		88F1A97C26E1B53300E4B64E /* iOS_DemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F1A97B26E1B53300E4B64E /* iOS_DemoUITests.swift */; };
 		88F1A98D26E1D08F00E4B64E /* IndexCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F1A98C26E1D08F00E4B64E /* IndexCell.swift */; };
+		88F38C9728A20BFF005BCBFA /* HashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F38C9628A20BFF005BCBFA /* HashViewController.swift */; };
+		88F38C9B28A2375E005BCBFA /* HashOCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88F38C9A28A2375E005BCBFA /* HashOCViewController.m */; };
+		88F38C9E28A2496B005BCBFA /* CopyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88F38C9D28A2496B005BCBFA /* CopyViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,12 @@
 		88F1A97B26E1B53300E4B64E /* iOS_DemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_DemoUITests.swift; sourceTree = "<group>"; };
 		88F1A97D26E1B53300E4B64E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		88F1A98C26E1D08F00E4B64E /* IndexCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexCell.swift; sourceTree = "<group>"; };
+		88F38C9628A20BFF005BCBFA /* HashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HashViewController.swift; sourceTree = "<group>"; };
+		88F38C9828A2375E005BCBFA /* iOS Demo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iOS Demo-Bridging-Header.h"; sourceTree = "<group>"; };
+		88F38C9928A2375E005BCBFA /* HashOCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HashOCViewController.h; sourceTree = "<group>"; };
+		88F38C9A28A2375E005BCBFA /* HashOCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HashOCViewController.m; sourceTree = "<group>"; };
+		88F38C9C28A2496B005BCBFA /* CopyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CopyViewController.h; sourceTree = "<group>"; };
+		88F38C9D28A2496B005BCBFA /* CopyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CopyViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +110,7 @@
 		88F1A95826E1B52C00E4B64E /* iOS Demo */ = {
 			isa = PBXGroup;
 			children = (
+				88F38C9528A20BE4005BCBFA /* Hash */,
 				88F1A99126E1FE7200E4B64E /* Index */,
 				88F1A95926E1B52C00E4B64E /* AppDelegate.swift */,
 				88F1A95B26E1B52C00E4B64E /* SceneDelegate.swift */,
@@ -108,6 +118,7 @@
 				88F1A96226E1B53300E4B64E /* Assets.xcassets */,
 				88F1A96426E1B53300E4B64E /* LaunchScreen.storyboard */,
 				88F1A96726E1B53300E4B64E /* Info.plist */,
+				88F38C9828A2375E005BCBFA /* iOS Demo-Bridging-Header.h */,
 			);
 			path = "iOS Demo";
 			sourceTree = "<group>";
@@ -137,6 +148,18 @@
 				88F1A95D26E1B52C00E4B64E /* ViewController.swift */,
 			);
 			path = Index;
+			sourceTree = "<group>";
+		};
+		88F38C9528A20BE4005BCBFA /* Hash */ = {
+			isa = PBXGroup;
+			children = (
+				88F38C9628A20BFF005BCBFA /* HashViewController.swift */,
+				88F38C9928A2375E005BCBFA /* HashOCViewController.h */,
+				88F38C9A28A2375E005BCBFA /* HashOCViewController.m */,
+				88F38C9C28A2496B005BCBFA /* CopyViewController.h */,
+				88F38C9D28A2496B005BCBFA /* CopyViewController.m */,
+			);
+			path = Hash;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -206,6 +229,7 @@
 				TargetAttributes = {
 					88F1A95526E1B52C00E4B64E = {
 						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1340;
 					};
 					88F1A96B26E1B53300E4B64E = {
 						CreatedOnToolsVersion = 12.4;
@@ -271,8 +295,11 @@
 			files = (
 				88F1A95E26E1B52C00E4B64E /* ViewController.swift in Sources */,
 				88F1A95A26E1B52C00E4B64E /* AppDelegate.swift in Sources */,
+				88F38C9E28A2496B005BCBFA /* CopyViewController.m in Sources */,
 				88F1A98D26E1D08F00E4B64E /* IndexCell.swift in Sources */,
 				88F1A95C26E1B52C00E4B64E /* SceneDelegate.swift in Sources */,
+				88F38C9B28A2375E005BCBFA /* HashOCViewController.m in Sources */,
+				88F38C9728A20BFF005BCBFA /* HashViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -448,6 +475,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G2ZUQ5958D;
 				INFOPLIST_FILE = "iOS Demo/Info.plist";
@@ -457,6 +485,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.albz.test.iOS-Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "./iOS Demo/iOS Demo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -467,6 +497,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G2ZUQ5958D;
 				INFOPLIST_FILE = "iOS Demo/Info.plist";
@@ -476,6 +507,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.albz.test.iOS-Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "./iOS Demo/iOS Demo-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

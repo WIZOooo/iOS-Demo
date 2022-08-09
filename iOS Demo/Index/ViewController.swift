@@ -7,7 +7,10 @@
 
 import UIKit
 
-fileprivate let dataArray : NSArray = [IndexItemCellData(name: "Test", viewController: UIViewController.init())]
+fileprivate let dataArray : [IndexItemCellData] = [
+    IndexItemCellData(name: "Test", viewController: UIViewController.init()),
+    IndexItemCellData(name: "Hash OC", viewController: HashOCViewController.init()),
+]
 
 class ViewController: UIViewController {
     let cellReuseIdentifier = "IndexCell";
@@ -37,7 +40,7 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate{
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cellData = dataArray[indexPath.row] as! IndexItemCellData
+        let cellData = dataArray[indexPath.row]
         let cell:IndexCell = tableView.dequeueReusableCell(withIdentifier: cellReuseIdentifier) as! IndexCell
         cell.configure(cellData: cellData)
         return cell
@@ -49,6 +52,6 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate{
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        //
+        self.navigationController?.pushViewController(dataArray[indexPath.row].viewController, animated: true);
     }
 }
