@@ -22,6 +22,7 @@
 		88F38CB028A266FA005BCBFA /* IndexCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88F38CAF28A266FA005BCBFA /* IndexCell.xib */; };
 		88F38CB428A344B5005BCBFA /* ReadWriteLockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88F38CB328A344B5005BCBFA /* ReadWriteLockViewController.m */; };
 		88F38CB728A381EC005BCBFA /* MultiThreadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88F38CB628A381EC005BCBFA /* MultiThreadViewController.m */; };
+		88F38CBB28A39E1F005BCBFA /* AtomicThreadNotSafeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88F38CBA28A39E1F005BCBFA /* AtomicThreadNotSafeViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,8 @@
 		88F38CB328A344B5005BCBFA /* ReadWriteLockViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReadWriteLockViewController.m; sourceTree = "<group>"; };
 		88F38CB528A381EC005BCBFA /* MultiThreadViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MultiThreadViewController.h; sourceTree = "<group>"; };
 		88F38CB628A381EC005BCBFA /* MultiThreadViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MultiThreadViewController.m; sourceTree = "<group>"; };
+		88F38CB928A39E1F005BCBFA /* AtomicThreadNotSafeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AtomicThreadNotSafeViewController.h; sourceTree = "<group>"; };
+		88F38CBA28A39E1F005BCBFA /* AtomicThreadNotSafeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AtomicThreadNotSafeViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,6 +177,7 @@
 		88F38CA028A24D76005BCBFA /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
+				88F38CB828A39DFA005BCBFA /* Atomic */,
 				88F38CB128A34490005BCBFA /* ReadWriteLock */,
 				88F38C9528A20BE4005BCBFA /* Hash */,
 				88F38CB528A381EC005BCBFA /* MultiThreadViewController.h */,
@@ -189,6 +193,15 @@
 				88F38CB328A344B5005BCBFA /* ReadWriteLockViewController.m */,
 			);
 			path = ReadWriteLock;
+			sourceTree = "<group>";
+		};
+		88F38CB828A39DFA005BCBFA /* Atomic */ = {
+			isa = PBXGroup;
+			children = (
+				88F38CB928A39E1F005BCBFA /* AtomicThreadNotSafeViewController.h */,
+				88F38CBA28A39E1F005BCBFA /* AtomicThreadNotSafeViewController.m */,
+			);
+			path = Atomic;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -329,6 +342,7 @@
 				88F1A98D26E1D08F00E4B64E /* IndexCell.swift in Sources */,
 				88F1A95C26E1B52C00E4B64E /* SceneDelegate.swift in Sources */,
 				88F38C9B28A2375E005BCBFA /* HashOCViewController.m in Sources */,
+				88F38CBB28A39E1F005BCBFA /* AtomicThreadNotSafeViewController.m in Sources */,
 				88F38C9728A20BFF005BCBFA /* HashViewController.swift in Sources */,
 				88F38CB428A344B5005BCBFA /* ReadWriteLockViewController.m in Sources */,
 				88F38CB728A381EC005BCBFA /* MultiThreadViewController.m in Sources */,

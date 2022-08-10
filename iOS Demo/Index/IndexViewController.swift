@@ -11,6 +11,7 @@ fileprivate let dataArray : [IndexItemCellData] = [
     IndexItemCellData(name: "hash方法的使用场景及重写意义", viewController: HashOCViewController.init()),
     IndexItemCellData(name: "使用并行队列和dispatch_barrier实现读写锁", viewController: ReadWriteLockViewController.init()),
     IndexItemCellData(name: "多线程示例及笔记", viewController: MultiThreadViewController.init()),
+    IndexItemCellData(name: "atomic非线程安全论证", viewController: AtomicThreadNotSafeViewController.init()),
 ]
 
 class IndexViewController: UIViewController {
