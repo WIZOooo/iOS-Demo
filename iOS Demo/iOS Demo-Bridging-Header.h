@@ -3,3 +3,5 @@
 //
 
 #import "HashOCViewController.h"
+#import "ReadWriteLockViewController.h"
+#import "MultiThreadViewController.h"

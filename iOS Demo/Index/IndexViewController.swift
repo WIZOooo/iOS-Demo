@@ -9,10 +9,11 @@ import UIKit
 
 fileprivate let dataArray : [IndexItemCellData] = [
     IndexItemCellData(name: "hash方法的使用场景及重写意义", viewController: HashOCViewController.init()),
-    
+    IndexItemCellData(name: "使用并行队列和dispatch_barrier实现读写锁", viewController: ReadWriteLockViewController.init()),
+    IndexItemCellData(name: "多线程示例及笔记", viewController: MultiThreadViewController.init()),
 ]
 
-class ViewController: UIViewController {
+class IndexViewController: UIViewController {
     let cellReuseIdentifier = "IndexCell";
     
     private var tableView : UITableView?
@@ -33,7 +34,7 @@ class ViewController: UIViewController {
     }
 }
 
-extension ViewController: UITableViewDataSource, UITableViewDelegate{
+extension IndexViewController: UITableViewDataSource, UITableViewDelegate{
     // MARK: UITableViewDataSource
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return dataArray.count

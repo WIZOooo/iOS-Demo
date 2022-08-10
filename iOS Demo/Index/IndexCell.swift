@@ -30,7 +30,6 @@ class IndexCell : UITableViewCell {
         return String(describing: self)
     }
     static func fromNib() -> UINib {
-        NSLog(self.customClassName())
         return UINib.init(nibName: self.customClassName(), bundle: nil)
     }
 }
