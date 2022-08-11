@@ -8,6 +8,7 @@
 import UIKit
 
 fileprivate let dataArray : [IndexItemCellData] = [
+    IndexItemCellData(name: "self和super", viewController: SelfSuperViewController.init()),
     IndexItemCellData(name: "PlaygroundOC", viewController: PlaygroundOCViewController.init()),
     IndexItemCellData(name: "PlaygroundSwift", viewController: PlaygroundSwiftViewController.init()),
     IndexItemCellData(name: "静态类型与动态类型的区别", viewController: StaticDynamicTypeViewController.init()),

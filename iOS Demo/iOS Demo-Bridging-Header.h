@@ -8,3 +8,4 @@
 #import "AtomicThreadNotSafeViewController.h"
 #import "PlaygroundOCViewController.h"
 #import "StaticDynamicTypeViewController.h"
+#import "SelfSuperViewController.h"

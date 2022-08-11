@@ -26,6 +26,7 @@
 		88F38CBE28A3B4FA005BCBFA /* StaticDynamicTypeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88F38CBD28A3B4FA005BCBFA /* StaticDynamicTypeViewController.m */; };
 		88F38CC328A3B75F005BCBFA /* PlaygroundOCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88F38CC228A3B75F005BCBFA /* PlaygroundOCViewController.m */; };
 		88F38CC528A3B77E005BCBFA /* PlaygroundSwiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F38CC428A3B77E005BCBFA /* PlaygroundSwiftViewController.swift */; };
+		88F38CC828A4D750005BCBFA /* SelfSuperViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88F38CC728A4D750005BCBFA /* SelfSuperViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +80,8 @@
 		88F38CC128A3B75F005BCBFA /* PlaygroundOCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlaygroundOCViewController.h; sourceTree = "<group>"; };
 		88F38CC228A3B75F005BCBFA /* PlaygroundOCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlaygroundOCViewController.m; sourceTree = "<group>"; };
 		88F38CC428A3B77E005BCBFA /* PlaygroundSwiftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaygroundSwiftViewController.swift; sourceTree = "<group>"; };
+		88F38CC628A4D750005BCBFA /* SelfSuperViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SelfSuperViewController.h; sourceTree = "<group>"; };
+		88F38CC728A4D750005BCBFA /* SelfSuperViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SelfSuperViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -192,6 +195,8 @@
 				88F38C9528A20BE4005BCBFA /* Hash */,
 				88F38CBC28A3B4FA005BCBFA /* StaticDynamicTypeViewController.h */,
 				88F38CBD28A3B4FA005BCBFA /* StaticDynamicTypeViewController.m */,
+				88F38CC628A4D750005BCBFA /* SelfSuperViewController.h */,
+				88F38CC728A4D750005BCBFA /* SelfSuperViewController.m */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -365,6 +370,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88F38CC828A4D750005BCBFA /* SelfSuperViewController.m in Sources */,
 				88F1A95E26E1B52C00E4B64E /* IndexViewController.swift in Sources */,
 				88F1A95A26E1B52C00E4B64E /* AppDelegate.swift in Sources */,
 				88F38C9E28A2496B005BCBFA /* CopyViewController.m in Sources */,
