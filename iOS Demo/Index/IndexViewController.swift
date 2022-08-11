@@ -8,6 +8,9 @@
 import UIKit
 
 fileprivate let dataArray : [IndexItemCellData] = [
+    IndexItemCellData(name: "PlaygroundOC", viewController: PlaygroundOCViewController.init()),
+    IndexItemCellData(name: "PlaygroundSwift", viewController: PlaygroundSwiftViewController.init()),
+    IndexItemCellData(name: "静态类型与动态类型的区别", viewController: StaticDynamicTypeViewController.init()),
     IndexItemCellData(name: "hash方法的使用场景及重写意义", viewController: HashOCViewController.init()),
     IndexItemCellData(name: "使用并行队列和dispatch_barrier实现读写锁", viewController: ReadWriteLockViewController.init()),
     IndexItemCellData(name: "多线程示例及笔记", viewController: MultiThreadViewController.init()),

@@ -23,6 +23,9 @@
 		88F38CB428A344B5005BCBFA /* ReadWriteLockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88F38CB328A344B5005BCBFA /* ReadWriteLockViewController.m */; };
 		88F38CB728A381EC005BCBFA /* MultiThreadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88F38CB628A381EC005BCBFA /* MultiThreadViewController.m */; };
 		88F38CBB28A39E1F005BCBFA /* AtomicThreadNotSafeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88F38CBA28A39E1F005BCBFA /* AtomicThreadNotSafeViewController.m */; };
+		88F38CBE28A3B4FA005BCBFA /* StaticDynamicTypeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88F38CBD28A3B4FA005BCBFA /* StaticDynamicTypeViewController.m */; };
+		88F38CC328A3B75F005BCBFA /* PlaygroundOCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88F38CC228A3B75F005BCBFA /* PlaygroundOCViewController.m */; };
+		88F38CC528A3B77E005BCBFA /* PlaygroundSwiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F38CC428A3B77E005BCBFA /* PlaygroundSwiftViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +74,11 @@
 		88F38CB628A381EC005BCBFA /* MultiThreadViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MultiThreadViewController.m; sourceTree = "<group>"; };
 		88F38CB928A39E1F005BCBFA /* AtomicThreadNotSafeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AtomicThreadNotSafeViewController.h; sourceTree = "<group>"; };
 		88F38CBA28A39E1F005BCBFA /* AtomicThreadNotSafeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AtomicThreadNotSafeViewController.m; sourceTree = "<group>"; };
+		88F38CBC28A3B4FA005BCBFA /* StaticDynamicTypeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = StaticDynamicTypeViewController.h; path = Atomic/StaticDynamicTypeViewController.h; sourceTree = "<group>"; };
+		88F38CBD28A3B4FA005BCBFA /* StaticDynamicTypeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = StaticDynamicTypeViewController.m; path = Atomic/StaticDynamicTypeViewController.m; sourceTree = "<group>"; };
+		88F38CC128A3B75F005BCBFA /* PlaygroundOCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlaygroundOCViewController.h; sourceTree = "<group>"; };
+		88F38CC228A3B75F005BCBFA /* PlaygroundOCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlaygroundOCViewController.m; sourceTree = "<group>"; };
+		88F38CC428A3B77E005BCBFA /* PlaygroundSwiftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaygroundSwiftViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +163,7 @@
 		88F1A99126E1FE7200E4B64E /* Index */ = {
 			isa = PBXGroup;
 			children = (
+				88F38CC028A3B73B005BCBFA /* Playground */,
 				88F1A98C26E1D08F00E4B64E /* IndexCell.swift */,
 				88F1A95D26E1B52C00E4B64E /* IndexViewController.swift */,
 				88F38CAF28A266FA005BCBFA /* IndexCell.xib */,
@@ -177,11 +186,12 @@
 		88F38CA028A24D76005BCBFA /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
+				88F38CBF28A3B602005BCBFA /* MultiThread */,
 				88F38CB828A39DFA005BCBFA /* Atomic */,
 				88F38CB128A34490005BCBFA /* ReadWriteLock */,
 				88F38C9528A20BE4005BCBFA /* Hash */,
-				88F38CB528A381EC005BCBFA /* MultiThreadViewController.h */,
-				88F38CB628A381EC005BCBFA /* MultiThreadViewController.m */,
+				88F38CBC28A3B4FA005BCBFA /* StaticDynamicTypeViewController.h */,
+				88F38CBD28A3B4FA005BCBFA /* StaticDynamicTypeViewController.m */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -202,6 +212,25 @@
 				88F38CBA28A39E1F005BCBFA /* AtomicThreadNotSafeViewController.m */,
 			);
 			path = Atomic;
+			sourceTree = "<group>";
+		};
+		88F38CBF28A3B602005BCBFA /* MultiThread */ = {
+			isa = PBXGroup;
+			children = (
+				88F38CB528A381EC005BCBFA /* MultiThreadViewController.h */,
+				88F38CB628A381EC005BCBFA /* MultiThreadViewController.m */,
+			);
+			path = MultiThread;
+			sourceTree = "<group>";
+		};
+		88F38CC028A3B73B005BCBFA /* Playground */ = {
+			isa = PBXGroup;
+			children = (
+				88F38CC128A3B75F005BCBFA /* PlaygroundOCViewController.h */,
+				88F38CC228A3B75F005BCBFA /* PlaygroundOCViewController.m */,
+				88F38CC428A3B77E005BCBFA /* PlaygroundSwiftViewController.swift */,
+			);
+			path = Playground;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -340,6 +369,9 @@
 				88F1A95A26E1B52C00E4B64E /* AppDelegate.swift in Sources */,
 				88F38C9E28A2496B005BCBFA /* CopyViewController.m in Sources */,
 				88F1A98D26E1D08F00E4B64E /* IndexCell.swift in Sources */,
+				88F38CC528A3B77E005BCBFA /* PlaygroundSwiftViewController.swift in Sources */,
+				88F38CBE28A3B4FA005BCBFA /* StaticDynamicTypeViewController.m in Sources */,
+				88F38CC328A3B75F005BCBFA /* PlaygroundOCViewController.m in Sources */,
 				88F1A95C26E1B52C00E4B64E /* SceneDelegate.swift in Sources */,
 				88F38C9B28A2375E005BCBFA /* HashOCViewController.m in Sources */,
 				88F38CBB28A39E1F005BCBFA /* AtomicThreadNotSafeViewController.m in Sources */,

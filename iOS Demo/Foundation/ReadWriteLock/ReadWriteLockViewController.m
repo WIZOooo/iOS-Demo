@@ -16,18 +16,21 @@
 
 @implementation ReadWriteLockViewController
 
+
+/// 当重写过属性的setter和getter方法时，
+/// 需要手动将合成变量与属性关联
 @synthesize countFlag = _countFlag;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     for (int index = 0; index < 10; index++) {
-        self.countFlag;
+//        self.countFlag;
     }
     
     self.countFlag = 10;
     
     for (int index = 0; index < 10; index++) {
-        self.countFlag;
+//        self.countFlag;
     }
 }
 
