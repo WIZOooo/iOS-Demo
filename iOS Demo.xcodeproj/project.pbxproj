@@ -27,6 +27,7 @@
 		88F38CC328A3B75F005BCBFA /* PlaygroundOCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88F38CC228A3B75F005BCBFA /* PlaygroundOCViewController.m */; };
 		88F38CC528A3B77E005BCBFA /* PlaygroundSwiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F38CC428A3B77E005BCBFA /* PlaygroundSwiftViewController.swift */; };
 		88F38CC828A4D750005BCBFA /* SelfSuperViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88F38CC728A4D750005BCBFA /* SelfSuperViewController.m */; };
+		88F38CCB28A5F887005BCBFA /* ClassClusterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88F38CCA28A5F887005BCBFA /* ClassClusterViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +83,8 @@
 		88F38CC428A3B77E005BCBFA /* PlaygroundSwiftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaygroundSwiftViewController.swift; sourceTree = "<group>"; };
 		88F38CC628A4D750005BCBFA /* SelfSuperViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SelfSuperViewController.h; sourceTree = "<group>"; };
 		88F38CC728A4D750005BCBFA /* SelfSuperViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SelfSuperViewController.m; sourceTree = "<group>"; };
+		88F38CC928A5F887005BCBFA /* ClassClusterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClassClusterViewController.h; sourceTree = "<group>"; };
+		88F38CCA28A5F887005BCBFA /* ClassClusterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClassClusterViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -197,6 +200,8 @@
 				88F38CBD28A3B4FA005BCBFA /* StaticDynamicTypeViewController.m */,
 				88F38CC628A4D750005BCBFA /* SelfSuperViewController.h */,
 				88F38CC728A4D750005BCBFA /* SelfSuperViewController.m */,
+				88F38CC928A5F887005BCBFA /* ClassClusterViewController.h */,
+				88F38CCA28A5F887005BCBFA /* ClassClusterViewController.m */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -382,6 +387,7 @@
 				88F38C9B28A2375E005BCBFA /* HashOCViewController.m in Sources */,
 				88F38CBB28A39E1F005BCBFA /* AtomicThreadNotSafeViewController.m in Sources */,
 				88F38C9728A20BFF005BCBFA /* HashViewController.swift in Sources */,
+				88F38CCB28A5F887005BCBFA /* ClassClusterViewController.m in Sources */,
 				88F38CB428A344B5005BCBFA /* ReadWriteLockViewController.m in Sources */,
 				88F38CB728A381EC005BCBFA /* MultiThreadViewController.m in Sources */,
 			);
