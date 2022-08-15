@@ -28,6 +28,9 @@
 		88F38CC528A3B77E005BCBFA /* PlaygroundSwiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F38CC428A3B77E005BCBFA /* PlaygroundSwiftViewController.swift */; };
 		88F38CC828A4D750005BCBFA /* SelfSuperViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88F38CC728A4D750005BCBFA /* SelfSuperViewController.m */; };
 		88F38CCB28A5F887005BCBFA /* ClassClusterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88F38CCA28A5F887005BCBFA /* ClassClusterViewController.m */; };
+		88F38CCD28A656FF005BCBFA /* ClassStructViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F38CCC28A656FF005BCBFA /* ClassStructViewController.swift */; };
+		88F38CCF28A9F6D5005BCBFA /* BlockSwiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F38CCE28A9F6D5005BCBFA /* BlockSwiftViewController.swift */; };
+		88F38CD228A9F6E4005BCBFA /* BlockOCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88F38CD128A9F6E4005BCBFA /* BlockOCViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +88,10 @@
 		88F38CC728A4D750005BCBFA /* SelfSuperViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SelfSuperViewController.m; sourceTree = "<group>"; };
 		88F38CC928A5F887005BCBFA /* ClassClusterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClassClusterViewController.h; sourceTree = "<group>"; };
 		88F38CCA28A5F887005BCBFA /* ClassClusterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClassClusterViewController.m; sourceTree = "<group>"; };
+		88F38CCC28A656FF005BCBFA /* ClassStructViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassStructViewController.swift; sourceTree = "<group>"; };
+		88F38CCE28A9F6D5005BCBFA /* BlockSwiftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockSwiftViewController.swift; sourceTree = "<group>"; };
+		88F38CD028A9F6E3005BCBFA /* BlockOCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlockOCViewController.h; sourceTree = "<group>"; };
+		88F38CD128A9F6E4005BCBFA /* BlockOCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlockOCViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -202,6 +209,10 @@
 				88F38CC728A4D750005BCBFA /* SelfSuperViewController.m */,
 				88F38CC928A5F887005BCBFA /* ClassClusterViewController.h */,
 				88F38CCA28A5F887005BCBFA /* ClassClusterViewController.m */,
+				88F38CCC28A656FF005BCBFA /* ClassStructViewController.swift */,
+				88F38CCE28A9F6D5005BCBFA /* BlockSwiftViewController.swift */,
+				88F38CD028A9F6E3005BCBFA /* BlockOCViewController.h */,
+				88F38CD128A9F6E4005BCBFA /* BlockOCViewController.m */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -376,9 +387,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				88F38CC828A4D750005BCBFA /* SelfSuperViewController.m in Sources */,
+				88F38CCF28A9F6D5005BCBFA /* BlockSwiftViewController.swift in Sources */,
 				88F1A95E26E1B52C00E4B64E /* IndexViewController.swift in Sources */,
 				88F1A95A26E1B52C00E4B64E /* AppDelegate.swift in Sources */,
 				88F38C9E28A2496B005BCBFA /* CopyViewController.m in Sources */,
+				88F38CCD28A656FF005BCBFA /* ClassStructViewController.swift in Sources */,
 				88F1A98D26E1D08F00E4B64E /* IndexCell.swift in Sources */,
 				88F38CC528A3B77E005BCBFA /* PlaygroundSwiftViewController.swift in Sources */,
 				88F38CBE28A3B4FA005BCBFA /* StaticDynamicTypeViewController.m in Sources */,
@@ -389,6 +402,7 @@
 				88F38C9728A20BFF005BCBFA /* HashViewController.swift in Sources */,
 				88F38CCB28A5F887005BCBFA /* ClassClusterViewController.m in Sources */,
 				88F38CB428A344B5005BCBFA /* ReadWriteLockViewController.m in Sources */,
+				88F38CD228A9F6E4005BCBFA /* BlockOCViewController.m in Sources */,
 				88F38CB728A381EC005BCBFA /* MultiThreadViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
