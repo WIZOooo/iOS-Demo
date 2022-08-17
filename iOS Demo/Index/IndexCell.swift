@@ -8,9 +8,14 @@
 import Foundation
 import UIKit
 
-struct IndexItemCellData {
-    var name : String
-    var viewController : UIViewController
+class IndexItemCellData {
+    var name : String = ""
+//    var viewController : UIViewController
+    var viewControllerClass : AnyClass = UIViewController.classForCoder()
+    init(name:String, viewControllerClass:AnyClass) {
+        self.name = name
+        self.viewControllerClass = viewControllerClass
+    }
 }
 
 class IndexCell : UITableViewCell {

@@ -8,16 +8,17 @@
 import UIKit
 
 fileprivate let dataArray : [IndexItemCellData] = [
-    IndexItemCellData(name: "Block Swift", viewController: BlockSwiftViewController.init()),
-    IndexItemCellData(name: "Block OC", viewController: BlockOCViewController.init()),
-    IndexItemCellData(name: "PlaygroundOC", viewController: PlaygroundOCViewController.init()),
-    IndexItemCellData(name: "PlaygroundSwift", viewController: PlaygroundSwiftViewController.init()),
-    IndexItemCellData(name: "self和super", viewController: SelfSuperViewController.init()),
-    IndexItemCellData(name: "静态类型与动态类型的区别", viewController: StaticDynamicTypeViewController.init()),
-    IndexItemCellData(name: "hash方法的使用场景及重写意义", viewController: HashOCViewController.init()),
-    IndexItemCellData(name: "使用并行队列和dispatch_barrier实现读写锁", viewController: ReadWriteLockViewController.init()),
-    IndexItemCellData(name: "多线程示例及笔记", viewController: MultiThreadViewController.init()),
-    IndexItemCellData(name: "atomic非线程安全论证", viewController: AtomicThreadNotSafeViewController.init()),
+    IndexItemCellData.init(name: "UIView CALayer", viewControllerClass: CALayerUIViewViewController.classForCoder()),
+    IndexItemCellData.init(name: "Block Swift", viewControllerClass: BlockSwiftViewController.classForCoder()),
+    IndexItemCellData.init(name: "Block OC", viewControllerClass: BlockOCViewController.classForCoder()),
+    IndexItemCellData.init(name: "PlaygroundOC", viewControllerClass: PlaygroundOCViewController.classForCoder()),
+    IndexItemCellData.init(name: "PlaygroundSwift", viewControllerClass: PlaygroundSwiftViewController.classForCoder()),
+    IndexItemCellData.init(name: "self和super", viewControllerClass: SelfSuperViewController.classForCoder()),
+    IndexItemCellData.init(name: "静态类型与动态类型的区别", viewControllerClass: StaticDynamicTypeViewController.classForCoder()),
+    IndexItemCellData.init(name: "hash方法的使用场景及重写意义", viewControllerClass: HashOCViewController.classForCoder()),
+    IndexItemCellData.init(name: "使用并行队列和dispatch_barrier实现读写锁", viewControllerClass: ReadWriteLockViewController.classForCoder()),
+    IndexItemCellData.init(name: "多线程示例及笔记", viewControllerClass: MultiThreadViewController.classForCoder()),
+    IndexItemCellData.init(name: "atomic非线程安全论证", viewControllerClass: AtomicThreadNotSafeViewController.classForCoder()),
 ]
 
 class IndexViewController: UIViewController {
@@ -55,6 +56,8 @@ extension IndexViewController: UITableViewDataSource, UITableViewDelegate{
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        self.navigationController?.pushViewController(dataArray[indexPath.row].viewController, animated: true);
+        let cls: UIViewController.Type = dataArray[indexPath.row].viewControllerClass as! UIViewController.Type
+        let vc : UIViewController = cls.init()
+        self.navigationController?.pushViewController(vc, animated: true);
     }
 }
