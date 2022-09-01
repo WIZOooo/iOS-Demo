@@ -31,6 +31,7 @@
 		88F38CCD28A656FF005BCBFA /* ClassStructViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F38CCC28A656FF005BCBFA /* ClassStructViewController.swift */; };
 		88F38CCF28A9F6D5005BCBFA /* BlockSwiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F38CCE28A9F6D5005BCBFA /* BlockSwiftViewController.swift */; };
 		88F38CD228A9F6E4005BCBFA /* BlockOCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88F38CD128A9F6E4005BCBFA /* BlockOCViewController.m */; };
+		88F38CD628ABCED2005BCBFA /* CALayerUIViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88F38CD528ABCED2005BCBFA /* CALayerUIViewViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,6 +93,8 @@
 		88F38CCE28A9F6D5005BCBFA /* BlockSwiftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockSwiftViewController.swift; sourceTree = "<group>"; };
 		88F38CD028A9F6E3005BCBFA /* BlockOCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlockOCViewController.h; sourceTree = "<group>"; };
 		88F38CD128A9F6E4005BCBFA /* BlockOCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlockOCViewController.m; sourceTree = "<group>"; };
+		88F38CD428ABCED2005BCBFA /* CALayerUIViewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CALayerUIViewViewController.h; sourceTree = "<group>"; };
+		88F38CD528ABCED2005BCBFA /* CALayerUIViewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CALayerUIViewViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +145,7 @@
 		88F1A95826E1B52C00E4B64E /* iOS Demo */ = {
 			isa = PBXGroup;
 			children = (
+				88F38CD328ABCEA1005BCBFA /* UIKit */,
 				88F38CA028A24D76005BCBFA /* Foundation */,
 				88F1A99126E1FE7200E4B64E /* Index */,
 				88F1A95926E1B52C00E4B64E /* AppDelegate.swift */,
@@ -252,6 +256,15 @@
 				88F38CC428A3B77E005BCBFA /* PlaygroundSwiftViewController.swift */,
 			);
 			path = Playground;
+			sourceTree = "<group>";
+		};
+		88F38CD328ABCEA1005BCBFA /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				88F38CD428ABCED2005BCBFA /* CALayerUIViewViewController.h */,
+				88F38CD528ABCED2005BCBFA /* CALayerUIViewViewController.m */,
+			);
+			path = UIKit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -386,6 +399,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88F38CD628ABCED2005BCBFA /* CALayerUIViewViewController.m in Sources */,
 				88F38CC828A4D750005BCBFA /* SelfSuperViewController.m in Sources */,
 				88F38CCF28A9F6D5005BCBFA /* BlockSwiftViewController.swift in Sources */,
 				88F1A95E26E1B52C00E4B64E /* IndexViewController.swift in Sources */,
@@ -579,6 +593,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G2ZUQ5958D;
@@ -601,6 +616,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G2ZUQ5958D;
